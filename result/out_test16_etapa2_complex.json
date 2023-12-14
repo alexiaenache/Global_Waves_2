@@ -9349,7 +9349,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 10360,
-  "message" : "Liked songs:\n\t[The Man, Solitude Dance]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Solitude Dance, The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "jack29",
@@ -9410,7 +9410,7 @@
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 10370,
-  "message" : "Liked songs:\n\t[Delicate, Start Me Up, Harmony Pandora, Harmony Love]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Harmony Pandora, Delicate, Start Me Up, Harmony Love]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "alice22",
@@ -9959,7 +9959,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 10460,
-  "message" : "Liked songs:\n\t[The Man, Solitude Dance]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Solitude Dance, The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "jack29",
@@ -10020,7 +10020,7 @@
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 10470,
-  "message" : "Liked songs:\n\t[Delicate, Start Me Up, Harmony Pandora, Adventure Rhythm, Pandora Utopia]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Harmony Pandora, Adventure Rhythm, Pandora Utopia, Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "alice22",
@@ -10203,7 +10203,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 10500,
-  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space, Adventure Rhythm, Pandora Utopia, Whisper Rapture]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Adventure Rhythm, Pandora Utopia, Whatever You Need, Blank Space, Whisper Rapture]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "david27",
@@ -10569,7 +10569,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 10560,
-  "message" : "Liked songs:\n\t[The Man, Heart Mystique, Essence Rapture, Solitude Dance]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Heart Mystique, Essence Rapture, Solitude Dance, The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "jack29",
@@ -10630,7 +10630,7 @@
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 10570,
-  "message" : "Liked songs:\n\t[Adventure Rhythm, Pandora Utopia, Delicate, Start Me Up, Harmony Pandora]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Adventure Rhythm, Pandora Utopia, Harmony Pandora, Crescendo Twilight, Odyssey Reflection]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "alice22",
@@ -10752,7 +10752,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 10590,
-  "message" : "Liked songs:\n\t[Paint It Black, Dream Bliss, Bliss Sunset, Soul Pandora, Adventure Infinity]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Dream Bliss, Bliss Sunset, Paint It Black, Soul Pandora, Adventure Infinity]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "carol19",
@@ -10874,7 +10874,7 @@
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 10610,
-  "message" : "Liked songs:\n\t[Don't, Voyage Paradox, Night Harmony, Soul Pandora, Adventure Infinity]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Voyage Paradox, Night Harmony, Soul Pandora, Adventure Infinity, Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "emily30",
@@ -10996,7 +10996,7 @@
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 10630,
-  "message" : "Liked songs:\n\t[Love Story, Heart Mystique, Essence Rapture, Heart Utopia, Solitude Reflection]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Heart Mystique, Essence Rapture, Love Story, Heart Utopia, Solitude Reflection]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "grace25",
@@ -11118,7 +11118,7 @@
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 10650,
-  "message" : "Liked songs:\n\t[Happier, Crescendo Twilight, Odyssey Reflection]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Crescendo Twilight, Odyssey Reflection, Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "irene33",
@@ -11179,7 +11179,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 10660,
-  "message" : "Liked songs:\n\t[Voyage Paradox, Night Harmony, The Man, Heart Mystique, Essence Rapture]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Voyage Paradox, Night Harmony, Heart Mystique, Essence Rapture, Solitude Dance]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "jack29",
@@ -11240,7 +11240,7 @@
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 10670,
-  "message" : "Liked songs:\n\t[Adventure Rhythm, Pandora Utopia, Delicate, Start Me Up, Harmony Pandora]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Adventure Rhythm, Pandora Utopia, Harmony Pandora, Crescendo Twilight, Odyssey Reflection]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "alice22",
@@ -11362,7 +11362,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 10690,
-  "message" : "Liked songs:\n\t[Paint It Black, Soul Pandora, Adventure Infinity, Dream Bliss, Bliss Sunset]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Soul Pandora, Adventure Infinity, Paint It Black, Dream Bliss, Bliss Sunset]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "carol19",
@@ -11423,7 +11423,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 10700,
-  "message" : "Liked songs:\n\t[Adventure Rhythm, Pandora Utopia, Whatever You Need, Blank Space, Whisper Rapture]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Adventure Rhythm, Pandora Utopia, Whisper Rapture, Heart Dance, Whatever You Need]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "david27",
@@ -11484,7 +11484,7 @@
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 10710,
-  "message" : "Liked songs:\n\t[Voyage Paradox, Night Harmony, Don't, Soul Pandora, Adventure Infinity]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Voyage Paradox, Night Harmony, Soul Pandora, Adventure Infinity, Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "emily30",
@@ -11606,7 +11606,7 @@
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 10730,
-  "message" : "Liked songs:\n\t[Love Story, Heart Mystique, Essence Rapture, Heart Utopia, Solitude Reflection]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Heart Mystique, Essence Rapture, Love Story, Heart Utopia, Solitude Reflection]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "grace25",
@@ -11789,7 +11789,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 10760,
-  "message" : "Liked songs:\n\t[Voyage Paradox, Night Harmony, The Man, Heart Mystique, Essence Rapture]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Voyage Paradox, Night Harmony, Heart Mystique, Essence Rapture, Solitude Dance]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "jack29",
@@ -11850,7 +11850,7 @@
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 10770,
-  "message" : "Liked songs:\n\t[Adventure Rhythm, Pandora Utopia, Delicate, Start Me Up, Harmony Pandora]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Adventure Rhythm, Pandora Utopia, Harmony Pandora, Crescendo Twilight, Odyssey Reflection]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "alice22",
@@ -11972,7 +11972,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 10790,
-  "message" : "Liked songs:\n\t[Paint It Black, Soul Pandora, Adventure Infinity, Dream Bliss, Bliss Sunset]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Soul Pandora, Adventure Infinity, Paint It Black, Dream Bliss, Bliss Sunset]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "carol19",
@@ -12033,7 +12033,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 10800,
-  "message" : "Liked songs:\n\t[Adventure Rhythm, Pandora Utopia, Whatever You Need, Blank Space, Whisper Rapture]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Adventure Rhythm, Pandora Utopia, Whisper Rapture, Heart Dance, Whatever You Need]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "david27",
@@ -12094,7 +12094,7 @@
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 10810,
-  "message" : "Liked songs:\n\t[Voyage Paradox, Night Harmony, Don't, Soul Pandora, Adventure Infinity]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Voyage Paradox, Night Harmony, Soul Pandora, Adventure Infinity, Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "emily30",
@@ -12216,7 +12216,7 @@
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 10830,
-  "message" : "Liked songs:\n\t[Love Story, Heart Mystique, Essence Rapture, Heart Utopia, Solitude Reflection]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Heart Mystique, Essence Rapture, Love Story, Heart Utopia, Solitude Reflection]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "grace25",
@@ -12399,7 +12399,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 10860,
-  "message" : "Liked songs:\n\t[Heart Mystique, Essence Rapture, Voyage Paradox, Night Harmony, The Man]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Heart Mystique, Essence Rapture, Voyage Paradox, Night Harmony, Solitude Dance]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "jack29",
@@ -12582,7 +12582,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 10890,
-  "message" : "Liked songs:\n\t[Paint It Black, Soul Pandora, Adventure Infinity, Dream Bliss, Bliss Sunset]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Soul Pandora, Adventure Infinity, Dream Bliss, Bliss Sunset, Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "carol19",
@@ -12643,7 +12643,7 @@
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 10900,
-  "message" : "Liked songs:\n\t[Adventure Rhythm, Pandora Utopia, Whatever You Need, Blank Space, Whisper Rapture]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Adventure Rhythm, Pandora Utopia, Whisper Rapture, Heart Dance, Heart Utopia]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "david27",
@@ -12704,7 +12704,7 @@
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 10910,
-  "message" : "Liked songs:\n\t[Crescendo Twilight, Odyssey Reflection, Voyage Paradox, Night Harmony, Don't]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Crescendo Twilight, Odyssey Reflection, Voyage Paradox, Night Harmony, Mystique Echo]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "emily30",
@@ -12826,7 +12826,7 @@
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 10930,
-  "message" : "Liked songs:\n\t[Starlight Rapture, Pinnacle Cascade, Heart Mystique, Essence Rapture, Love Story]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Starlight Rapture, Pinnacle Cascade, Heart Mystique, Essence Rapture, Heart Utopia]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "grace25",
@@ -13192,7 +13192,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 10990,
-  "message" : "Liked songs:\n\t[Starlight Rapture, Pinnacle Cascade, Paint It Black, Soul Pandora, Adventure Infinity]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Starlight Rapture, Pinnacle Cascade, Soul Pandora, Adventure Infinity, Dream Bliss]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "carol19",
@@ -13558,7 +13558,7 @@
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 11050,
-  "message" : "Liked songs:\n\t[Harmony Pandora, Happier, Heart Mystique, Essence Rapture, Harmony Love]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Harmony Pandora, Heart Mystique, Essence Rapture, Harmony Love, Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "irene33",
@@ -13619,7 +13619,7 @@
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 11060,
-  "message" : "Liked songs:\n\t[Crescendo Twilight, Odyssey Reflection, Voyage Paradox, Night Harmony, The Man]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Crescendo Twilight, Odyssey Reflection, Voyage Paradox, Night Harmony, Heart Mystique]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "jack29",
@@ -13802,7 +13802,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 11090,
-  "message" : "Liked songs:\n\t[Starlight Rapture, Pinnacle Cascade, Paint It Black, Soul Pandora, Adventure Infinity]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Starlight Rapture, Pinnacle Cascade, Soul Pandora, Adventure Infinity, Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "carol19",
@@ -14046,7 +14046,7 @@
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 11130,
-  "message" : "Liked songs:\n\t[Starlight Rapture, Pinnacle Cascade, Heart Utopia, Solitude Reflection, Love Story]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Starlight Rapture, Pinnacle Cascade, Heart Utopia, Solitude Reflection, Twilight Velvet]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "grace25",
@@ -14168,7 +14168,7 @@
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 11150,
-  "message" : "Liked songs:\n\t[Harmony Pandora, Happier, Heart Mystique, Essence Rapture, Harmony Love]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Harmony Pandora, Heart Mystique, Essence Rapture, Harmony Love, Utopia Twilight]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "irene33",
@@ -14656,7 +14656,7 @@
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 11230,
-  "message" : "Liked songs:\n\t[Starlight Rapture, Pinnacle Cascade, Heart Utopia, Solitude Reflection, Love Story]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Starlight Rapture, Pinnacle Cascade, Heart Utopia, Solitude Reflection, Twilight Velvet]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "grace25",
@@ -14778,7 +14778,7 @@
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 11250,
-  "message" : "Liked songs:\n\t[Harmony Pandora, Happier, Heart Mystique, Essence Rapture, Harmony Love]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Harmony Pandora, Heart Mystique, Essence Rapture, Harmony Love, Utopia Twilight]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "irene33",
@@ -15022,7 +15022,7 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 11290,
-  "message" : "Liked songs:\n\t[Soul Pandora, Adventure Infinity, Starlight Rapture, Pinnacle Cascade, Paint It Black]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Soul Pandora, Adventure Infinity, Starlight Rapture, Pinnacle Cascade, Utopia Twilight]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "changePage",
   "user" : "carol19",

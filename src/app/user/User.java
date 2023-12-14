@@ -282,33 +282,56 @@ public class User extends LibraryEntry{
     }
 
     public String like() {
-        if (player.getCurrentAudioFile() == null) {
+        if (player.getCurrentAudioFile() == null)
             return "Please load a source before liking or unliking.";
-        }
 
-        if (!player.getType().equals("song") && !player.getType().equals("playlist") && !player.getType().equals("album")) {
+        if (!player.getType().equals("song") && !player.getType().equals("playlist") && !player.getType().equals("album"))
             return "Loaded source is not a song.";
-        }
 
         Song song = (Song) player.getCurrentAudioFile();
+        // 1. song
+        // 2. song din likedSongs
+        // 3. song din likedSongs pentru fiecare user
+        // 4. song din Admin.getSongs() !!
+        boolean isLiked = false;
+        for (Song likedSong : likedSongs) {
+            if (likedSong.getName().equals(song.getName())) {
+                isLiked = true;
+                break;
+            }
+        }
 
-        if (likedSongs.contains(song)) {
+        if (isLiked) {
             likedSongs.remove(song);
             song.dislike();
-            for (Song currentSong : Admin.getSongs()) {
-                if (currentSong.getName().equals(song.getName())) {
-                    currentSong.dislike();
+            for (Song s : Admin.getSongs()) {
+                if(s.getName().equals(song.getName()) && !song.equals(s)) {
+                    s.dislike();
                 }
             }
-
+            for (User user : Admin.getUsers()) {
+                for (Song currentSong : user.getLikedSongs()) {
+                    if(song.getName().equals(currentSong.getName()) && !song.equals(currentSong)) {
+                        currentSong.dislike();
+                    }
+                }
+            }
             return "Unlike registered successfully.";
         }
 
         likedSongs.add(song);
         song.like();
-        for (Song currentSong : Admin.getSongs()) {
-            if (currentSong.getName().equals(song.getName())) {
-                currentSong.like();
+        System.out.println(song.getName() + " " + song.getLikes());
+        for (Song s : Admin.getSongs()) {
+            if(s.getName().equals(song.getName()) && !song.equals(s)) {
+                s.like();
+            }
+        }
+        for (User user : Admin.getUsers()) {
+            for (Song currentSong : user.getLikedSongs()) {
+                if(song.getName().equals(currentSong.getName()) && !song.equals(currentSong)) {
+                    currentSong.like();
+                }
             }
         }
         return "Like registered successfully.";
