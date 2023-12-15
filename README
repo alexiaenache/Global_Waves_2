@@ -1,0 +1,67 @@
+Enache Alexia-Ioana 321CA
+
+I used the official solution for part 1.
+
+Design pattern used: Visitor for the command printCurrentPage in pages.
+Classes used for the design pattern: ArtistPage, HomePage, Page, HostPage,
+LikedContentPage, PageVisitor, PageVisitor, PrintVisitor.
+
+Admin Class:  is a central component in the audio streaming application,
+responsible for managing users, songs, playlists, podcasts, and albums.
+It serves as the administrative interface for various operations within
+the system. Retrieving information about users, albums, songs, and playlists.
+Modifying the state of the system by adding or updating users, songs, albums,
+and podcasts. Performing administrative tasks like resetting the system state
+and updating timestamps. Retrieving top 5 lists of songs, playlists, albums,
+and artists based on various criteria. Handling user removal and checking for
+safe deletion based on current playback sources.
+
+User Class:
+The User class represents a user in a music streaming application. This class
+extends the LibraryEntry class, indicating that a user is a library entry within
+the application. The user has various attributes and functionalities related to
+music playback, playlist management, liked songs, and more.
+
+Player Class:
+The Player class represents the audio player module in the music application.
+It manages the playback of various audio sources, including songs, playlists,
+podcasts, and albums. The class provides functionality for controlling playback,
+managing repeat modes, shuffling tracks, and tracking player statistics.
+
+Album Class:
+The Album class represents a collection of songs within the music application.
+It extends the AudioCollection class and provides additional functionality specific
+to albums, such as managing song lists, visibility settings, and album details.
+
+AlbumOutput Class: The AlbumOutput class represents a simplified output format
+for an Album within the music application. This class is designed to provide a
+concise representation of an album, particularly for scenarios where only basic
+information is required.
+
+ArtistPage Class: The ArtistPage class is a specific type of page within the
+application that represents an artist's page. It extends the more general Page
+class, inheriting its properties and methods.
+
+HomePage Class: The HomePage class is a specialized type of page within the
+application, representing the home page. It extends the more general Page
+class, inheriting its properties and methods.
+
+HostPage Class: The HostPage class is a specialized type of page within the
+application, representing the host page. It extends the more general Page
+class, inheriting its properties and methods.
+
+LikedContentPage Class: The LikedContent class is a specialized type of page
+within the application, representing a page that contains liked or favorited
+content. It extends the more general Page class, inheriting its properties
+and methods.
+
+PageVisitable Interface: The PageVisitable interface defines a contract for
+objects that can be visited by a PageVisitor. Classes implementing this interface
+must provide an accept method, enabling the application of external functionalities
+represented by PageVisitor implementations.
+
+PageVisitor Interface: The PageVisitor interface defines a contract for classes that
+perform specific operations on various types of pages in an application. This interface
+follows the Visitor pattern, allowing external functionalities to be applied to different
+page types without modifying their internal structure.
+

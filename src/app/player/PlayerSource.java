@@ -23,16 +23,16 @@ public class PlayerSource {
     @Getter
     private int remainedDuration;
     private final List<Integer> indices = new ArrayList<>();
-    public void resetPlayer() {
-        remainedDuration = 0;
-    }
-    public PlayerSource(Enums.PlayerSourceType type, AudioFile audioFile) {
+
+
+    public PlayerSource(final Enums.PlayerSourceType type, final AudioFile audioFile) {
         this.type = type;
         this.audioFile = audioFile;
         this.remainedDuration = audioFile.getDuration();
     }
 
-    public PlayerSource(Enums.PlayerSourceType type, AudioCollection audioCollection) {
+    public PlayerSource(final Enums.PlayerSourceType type,
+                        final AudioCollection audioCollection) {
         this.type = type;
         this.audioCollection = audioCollection;
         this.audioFile = audioCollection.getTrackByIndex(0);
@@ -41,20 +41,25 @@ public class PlayerSource {
         this.remainedDuration = audioFile.getDuration();
     }
 
-    public PlayerSource(Enums.PlayerSourceType type, AudioCollection audioCollection, PodcastBookmark bookmark) {
+    public PlayerSource(final Enums.PlayerSourceType type,
+                        final AudioCollection audioCollection, final PodcastBookmark bookmark) {
         this.type = type;
         this.audioCollection = audioCollection;
         this.index = bookmark.getId();
         this.remainedDuration = bookmark.getTimestamp();
         this.audioFile = audioCollection.getTrackByIndex(index);
     }
-    public PlayerSource(Enums.PlayerSourceType type, AudioFile audioFile, SongBookmark bookmark) {
+
+    public PlayerSource(final Enums.PlayerSourceType type, final AudioFile audioFile,
+                        final SongBookmark bookmark) {
         this.type = type;
         this.audioFile = audioFile;
         this.remainedDuration = bookmark.getTimestamp();
         this.audioFile = audioCollection.getTrackByIndex(index);
     }
-    public PlayerSource(Enums.PlayerSourceType type, AudioCollection audioCollection, PlaylistBookmark bookmark) {
+
+    public PlayerSource(final Enums.PlayerSourceType type, final AudioCollection audioCollection,
+                        final PlaylistBookmark bookmark) {
         this.type = type;
         this.audioCollection = audioCollection;
         this.index = bookmark.getId();
@@ -66,7 +71,15 @@ public class PlayerSource {
         return remainedDuration;
     }
 
-    public boolean setNextAudioFile(Enums.RepeatMode repeatMode, boolean shuffle) {
+    /**
+     * Sets the next audio file in the playlist based on repeat mode and shuffle settings.
+     *
+     * @param repeatMode The repeat mode for playback.
+     * @param shuffle    Indicates whether shuffle mode is active.
+     * @return True if playback is paused, false otherwise.
+     */
+    public boolean setNextAudioFile(final Enums.RepeatMode repeatMode,
+                                    final boolean shuffle) {
         boolean isPaused = false;
 
         if (type == Enums.PlayerSourceType.LIBRARY) {
@@ -77,7 +90,9 @@ public class PlayerSource {
                 isPaused = true;
             }
         } else {
-            if (repeatMode == Enums.RepeatMode.REPEAT_ONCE || repeatMode == Enums.RepeatMode.REPEAT_CURRENT_SONG || repeatMode == Enums.RepeatMode.REPEAT_INFINITE) {
+            if (repeatMode == Enums.RepeatMode.REPEAT_ONCE
+                    || repeatMode == Enums.RepeatMode.REPEAT_CURRENT_SONG
+                    || repeatMode == Enums.RepeatMode.REPEAT_INFINITE) {
                 remainedDuration = audioFile.getDuration();
             } else if (repeatMode == Enums.RepeatMode.NO_REPEAT) {
                 if (shuffle) {
@@ -116,7 +131,12 @@ public class PlayerSource {
         return isPaused;
     }
 
-    public void setPrevAudioFile(boolean shuffle) {
+    /**
+     * Sets the previous audio file in the playlist based on shuffle settings.
+     *
+     * @param shuffle Indicates whether shuffle mode is active.
+     */
+    public void setPrevAudioFile(final boolean shuffle) {
         if (type == Enums.PlayerSourceType.LIBRARY) {
             remainedDuration = audioFile.getDuration();
         } else {
@@ -141,7 +161,12 @@ public class PlayerSource {
         }
     }
 
-    public void generateShuffleOrder(Integer seed) {
+    /**
+     * Generates a shuffled order of indices for the audio collection.
+     *
+     * @param seed The seed for the random number generator.
+     */
+    public void generateShuffleOrder(final Integer seed) {
         indices.clear();
         Random random = new Random(seed);
         for (int i = 0; i < audioCollection.getNumberOfTracks(); i++) {
@@ -150,6 +175,9 @@ public class PlayerSource {
         Collections.shuffle(indices, random);
     }
 
+    /**
+     * Updates the shuffle index based on the current index.
+     */
     public void updateShuffleIndex() {
         for (int i = 0; i < indices.size(); i++) {
             if (indices.get(i) == index) {
@@ -159,7 +187,12 @@ public class PlayerSource {
         }
     }
 
-    public void skip(int duration) {
+    /**
+     * Skips playback by the specified duration.
+     *
+     * @param duration The duration to skip in seconds (positive or negative).
+     */
+    public void skip(final int duration) {
         remainedDuration += duration;
         if (remainedDuration > audioFile.getDuration()) {
             remainedDuration = 0;
@@ -170,11 +203,19 @@ public class PlayerSource {
         }
     }
 
+    /**
+     * Updates the current audio file based on the current index.
+     */
     private void updateAudioFile() {
         setAudioFile(audioCollection.getTrackByIndex(index));
     }
 
-    public void setAudioFile(AudioFile audioFile) {
+    /**
+     * Sets the current audio file.
+     *
+     * @param audioFile The new audio file.
+     */
+    public void setAudioFile(final AudioFile audioFile) {
         this.audioFile = audioFile;
     }
 

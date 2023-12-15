@@ -1,22 +1,24 @@
 package app.user;
 
-public class Announcement {
+public final class Announcement {
     private String name;
     private String description;
 
-    private String hostName;
 
-    public Announcement(String name, String description,  String hostName) {
+    public Announcement(final String name, final String description) {
         this.name = name;
         this.description = description;
-        this.hostName = hostName;
     }
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    /**
+     * Sets the name of the announcement.
+     *
+     * @param name The new name for the announcement.
+     */
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -24,16 +26,13 @@ public class Announcement {
         return description;
     }
 
-    public void setDescription(String description) {
+    /**
+     * Sets the description of the announcement.
+     *
+     * @param description The new description for the announcement.
+     */
+    public void setDescription(final String description) {
         this.description = description;
     }
 
-
-    public String getHostName() {
-        return hostName;
-    }
-
-    public void setHostName(String hostName) {
-        this.hostName = hostName;
-    }
 }

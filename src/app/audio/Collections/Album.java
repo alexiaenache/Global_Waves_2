@@ -3,7 +3,6 @@ package app.audio.Collections;
 import app.audio.Files.AudioFile;
 import app.audio.Files.Song;
 import app.utils.Enums;
-import fileio.input.SongInput;
 import lombok.Getter;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ public final class Album extends AudioCollection {
     private Enums.Visibility visibility;
     private String description;
     private int releaseYear;
-    private Integer followers;
     private int timestamp;
 
     public ArrayList<Song> getSongs() {
@@ -25,55 +23,8 @@ public final class Album extends AudioCollection {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public int getReleaseYear() {
         return releaseYear;
-    }
-
-    public void setReleaseYear(int releaseYear) {
-        this.releaseYear = releaseYear;
-    }
-
-    public Album(String name, String owner, int timestamp , String description , int releaseYear, ArrayList<Song> songs) {
-        super(name, owner);
-        this.songs = songs;
-        this.description = description;
-        this.releaseYear = releaseYear;
-        this.timestamp = timestamp;
-    }
-
-    public boolean containsSong(Song song) {
-        return songs.contains(song);
-    }
-
-    public void addSong(Song song) {
-        songs.add(song);
-    }
-
-    public void removeSong(Song song) {
-        songs.remove(song);
-    }
-    public void removeSong(int index) {
-        songs.remove(index);
-    }
-
-    public void switchVisibility() {
-        if (visibility == Enums.Visibility.PUBLIC) {
-            visibility = Enums.Visibility.PRIVATE;
-        } else {
-            visibility = Enums.Visibility.PUBLIC;
-        }
-    }
-
-    public void increaseFollowers() {
-        followers++;
-    }
-
-    public void decreaseFollowers() {
-        followers--;
     }
 
     @Override
@@ -82,34 +33,71 @@ public final class Album extends AudioCollection {
     }
 
     @Override
-    public AudioFile getTrackByIndex(int index) {
+    public AudioFile getTrackByIndex(final int index) {
         return songs.get(index);
     }
 
-    @Override
-    public boolean isVisibleToUser(String user) {
-        return this.getVisibility() == Enums.Visibility.PUBLIC ||
-                (this.getVisibility() == Enums.Visibility.PRIVATE && this.getOwner().equals(user));
+    public void setDescription(final String description) {
+        this.description = description;
     }
 
-    @Override
-    public boolean matchesFollowers(String followers) {
-        return filterByFollowersCount(this.getFollowers(), followers);
+    public void setReleaseYear(final int releaseYear) {
+        this.releaseYear = releaseYear;
     }
 
-    private static boolean filterByFollowersCount(int count, String query) {
-        if (query.startsWith("<")) {
-            return count < Integer.parseInt(query.substring(1));
-        } else if (query.startsWith(">")) {
-            return count > Integer.parseInt(query.substring(1));
+    public Album(final String name, final String owner, final int timestamp,
+                 final String description, final int releaseYear, final ArrayList<Song> songs) {
+        super(name, owner);
+        this.songs = songs;
+        this.description = description;
+        this.releaseYear = releaseYear;
+        this.timestamp = timestamp;
+    }
+
+/**
+ * Switches the visibility of an object between public and private.
+ *
+ * This method toggles the visibility of an object between public and private.
+ * If the current visibility is public, it changes it to private, and vice versa.
+ */
+    public void switchVisibility() {
+        if (visibility == Enums.Visibility.PUBLIC) {
+            visibility = Enums.Visibility.PRIVATE;
         } else {
-            return count == Integer.parseInt(query);
+            visibility = Enums.Visibility.PUBLIC;
         }
     }
 
+
+/**
+ * Checks if the object is visible to a specific user.
+ *
+ * This method determines whether the object is visible to a particular user based on its visibility
+ * setting
+ * and ownership.
+ *
+ * @param user The username of the user for whom visibility is being checked.
+ * @return {@code true} if the object is public or if it is private and owned by the specified user;
+ *         {@code false} otherwise.
+ */
+    @Override
+    public boolean isVisibleToUser(final String user) {
+        return this.getVisibility() == Enums.Visibility.PUBLIC
+                || (this.getVisibility() == Enums.Visibility.PRIVATE
+                && this.getOwner().equals(user));
+    }
+
+    /**
+    * Retrieves the total number of likes for the object.
+    *
+    * This method calculates and returns the cumulative number of likes for all songs
+     * associated with the object.
+    *
+    * @return The total number of likes for the object.
+    */
     public int getLikes() {
         int likes = 0;
-        for(Song song : songs) {
+        for (Song song : songs) {
             likes += song.getLikes();
         }
         return likes;

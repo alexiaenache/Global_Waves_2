@@ -7,11 +7,19 @@ import app.user.User;
 import lombok.Getter;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-import static app.searchBar.FilterUtils.*;
+import static app.searchBar.FilterUtils.filterByAlbum;
+import static app.searchBar.FilterUtils.filterByArtist;
+import static app.searchBar.FilterUtils.filterByDescription;
 import static app.searchBar.FilterUtils.filterByFollowers;
+import static app.searchBar.FilterUtils.filterByGenre;
+import static app.searchBar.FilterUtils.filterByLyrics;
+import static app.searchBar.FilterUtils.filterByName;
+import static app.searchBar.FilterUtils.filterByOwner;
+import static app.searchBar.FilterUtils.filterByPlaylistVisibility;
+import static app.searchBar.FilterUtils.filterByReleaseYear;
+import static app.searchBar.FilterUtils.filterByTags;
 
 public class SearchBar {
     private List<LibraryEntry> results;
@@ -23,16 +31,27 @@ public class SearchBar {
     @Getter
     private LibraryEntry lastSelected;
 
-    public SearchBar(String user) {
+    public SearchBar(final String user) {
         this.results = new ArrayList<>();
         this.user = user;
     }
 
+    /**
+     * Clears the selection by resetting the lastSelected and lastSearchType attributes.
+     */
     public void clearSelection() {
         lastSelected = null;
         lastSearchType = null;
     }
-    public List<LibraryEntry> search(Filters filters, String type) {
+
+    /**
+     * Searches for library entries based on the specified filters and type.
+     *
+     * @param filters The filters to apply during the search.
+     * @param type    The type of library entries to search for.
+     * @return A list of library entries matching the search criteria.
+     */
+    public List<LibraryEntry> search(final Filters filters, final String type) {
         List<LibraryEntry> entries;
 
         switch (type) {
@@ -101,7 +120,7 @@ public class SearchBar {
             case "artist":
                 entries = new ArrayList<>(Admin.getUsers().size());
                 for (User user : Admin.getUsers()) {
-                    if(user.getType().equals("artist")){
+                    if (user.getType().equals("artist")) {
                         entries.add(user.asLibraryEntry());
                     }
                 }
@@ -127,7 +146,7 @@ public class SearchBar {
             case "host":
                 entries = new ArrayList<>(Admin.getUsers().size());
                 for (User user : Admin.getUsers()) {
-                    if(user.getType().equals("host")){
+                    if (user.getType().equals("host")) {
                         entries.add(user.asLibraryEntry());
                     }
                 }
@@ -148,13 +167,20 @@ public class SearchBar {
         return this.results;
     }
 
-    public LibraryEntry select(Integer itemNumber) {
+    /**
+     * Selects a library entry from the search results based on the item number.
+     *
+     * @param itemNumber The item number representing the position of the entry
+     *                   in the search results.
+     * @return The selected library entry or null if the item number is invalid.
+     */
+    public LibraryEntry select(final Integer itemNumber) {
         if (this.results.size() < itemNumber) {
             results.clear();
 
             return null;
         } else {
-            lastSelected =  this.results.get(itemNumber - 1);
+            lastSelected = this.results.get(itemNumber - 1);
             results.clear();
 
             return lastSelected;

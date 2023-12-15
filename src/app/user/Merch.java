@@ -1,11 +1,11 @@
 package app.user;
 
-public class Merch {
+public final class Merch {
     private String name;
     private String description;
     private int price;
 
-    public Merch(String name, String description, int price) {
+    public Merch(final String name, final String description, final int price) {
         this.name = name;
         this.description = description;
         this.price = price;
@@ -15,7 +15,12 @@ public class Merch {
         return name;
     }
 
-    public void setName(String name) {
+    /**
+     * Sets the name of the merch.
+     *
+     * @param name The new name for the merch.
+     */
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -23,7 +28,12 @@ public class Merch {
         return description;
     }
 
-    public void setDescription(String description) {
+    /**
+     * Sets the description of the merch.
+     *
+     * @param description The new name for the merch.
+     */
+    public void setDescription(final String description) {
         this.description = description;
     }
 
@@ -31,7 +41,4 @@ public class Merch {
         return price;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
 }

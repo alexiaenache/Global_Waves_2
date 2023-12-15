@@ -1,13 +1,14 @@
 package app.user;
 
-public class Event {
+public final class Event {
     private String name;
     private String description;
     private String date;
     private int timestamp;
     private String artistName;
 
-    public Event(String name, String description, String date, int timestamp, String artistName) {
+    public Event(final String name, final String description, final String date,
+                 final int timestamp, final String artistName) {
         this.name = name;
         this.description = description;
         this.date = date;
@@ -18,16 +19,26 @@ public class Event {
     public String getName() {
         return name;
     }
-
-    public void setName(String name) {
+    /**
+     * Sets the name of the event.
+     *
+     * @param name The new name for the event.
+     */
+    public void setName(final String name) {
         this.name = name;
     }
+
 
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
+    /**
+     * Sets the description of the event.
+     *
+     * @param description The new name for the event.
+     */
+    public void setDescription(final String description) {
         this.description = description;
     }
 
@@ -35,23 +46,17 @@ public class Event {
         return date;
     }
 
-    public void setDate(String date) {
-        this.date = date;
-    }
 
     public int getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(int timestamp) {
+    /**
+     * Sets the timestamp of the event.
+     *
+     * @param timestamp The new name for the event.
+     */
+    public void setTimestamp(final int timestamp) {
         this.timestamp = timestamp;
-    }
-
-    public String getArtistName() {
-        return artistName;
-    }
-
-    public void setArtistName(String artistName) {
-        this.artistName = artistName;
     }
 }

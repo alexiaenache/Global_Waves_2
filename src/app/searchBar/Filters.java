@@ -8,7 +8,6 @@ import java.util.ArrayList;
 @Data
 public class Filters {
     private String name;
-//    private String username;
     private String album;
     private ArrayList<String> tags;
     private String lyrics;
@@ -19,9 +18,8 @@ public class Filters {
     private String followers;
     private String description;
 
-    public Filters(FiltersInput filters) {
+    public Filters(final FiltersInput filters) {
         this.name = filters.getName();
-//        this.username = filters.getUsername();
         this.album = filters.getAlbum();
         this.tags = filters.getTags();
         this.lyrics = filters.getLyrics();

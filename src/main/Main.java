@@ -30,6 +30,7 @@ public final class Main {
     /**
      * DO NOT MODIFY MAIN METHOD
      * Call the checker
+     *
      * @param args from command line
      * @throws IOException in case of exceptions to reading / writing
      */
@@ -69,20 +70,17 @@ public final class Main {
      */
     public static void action(final String filePath1,
                               final String filePath2) throws IOException {
-        //if (!filePath1.equals("test15_etapa2_complex.json")) {
-        //    return;
-        //}
         ObjectMapper objectMapper = new ObjectMapper();
-        LibraryInput library = objectMapper.readValue(new File(CheckerConstants.TESTS_PATH + "library/library.json"), LibraryInput.class);
-        CommandInput[] commands = objectMapper.readValue(new File(CheckerConstants.TESTS_PATH + filePath1), CommandInput[].class);
+        LibraryInput library = objectMapper.readValue(new File(CheckerConstants
+                .TESTS_PATH + "library/library.json"), LibraryInput.class);
+        CommandInput[] commands = objectMapper.readValue(new File(CheckerConstants
+                .TESTS_PATH + filePath1), CommandInput[].class);
         ArrayNode outputs = objectMapper.createArrayNode();
 
         Admin.setUsers(library.getUsers());
         Admin.setSongs(library.getSongs());
         Admin.setPodcasts(library.getPodcasts());
-//        Admin.defaultPage();
         for (CommandInput command : commands) {
-            System.out.println(command.getTimestamp());
             Admin.updateTimestamp(command.getTimestamp());
             String commandName = command.getCommand();
 
@@ -99,8 +97,10 @@ public final class Main {
                 case "next" -> outputs.add(CommandRunner.next(command));
                 case "prev" -> outputs.add(CommandRunner.prev(command));
                 case "createPlaylist" -> outputs.add(CommandRunner.createPlaylist(command));
-                case "addRemoveInPlaylist" -> outputs.add(CommandRunner.addRemoveInPlaylist(command));
-                case "switchVisibility" -> outputs.add(CommandRunner.switchVisibility(command));
+                case "addRemoveInPlaylist" -> outputs.add(CommandRunner
+                        .addRemoveInPlaylist(command));
+                case "switchVisibility" -> outputs.add(CommandRunner
+                        .switchVisibility(command));
                 case "showPlaylists" -> outputs.add(CommandRunner.showPlaylists(command));
                 case "follow" -> outputs.add(CommandRunner.follow(command));
                 case "status" -> outputs.add(CommandRunner.status(command));
@@ -108,7 +108,8 @@ public final class Main {
                 case "getPreferredGenre" -> outputs.add(CommandRunner.getPreferredGenre(command));
                 case "getTop5Songs" -> outputs.add(CommandRunner.getTop5Songs(command));
                 case "getTop5Playlists" -> outputs.add(CommandRunner.getTop5Playlists(command));
-                case "switchConnectionStatus" -> outputs.add(CommandRunner.switchConnectionStatus(command));
+                case "switchConnectionStatus" -> outputs.add(CommandRunner
+                        .switchConnectionStatus(command));
                 case "getOnlineUsers" -> outputs.add(CommandRunner.getOnlineUsers(command));
                 case "addUser" -> outputs.add(CommandRunner.addUser(command));
                 case "addAlbum" -> outputs.add(CommandRunner.addAlbum(command));
