@@ -65,3 +65,19 @@ perform specific operations on various types of pages in an application. This in
 follows the Visitor pattern, allowing external functionalities to be applied to different
 page types without modifying their internal structure.
 
+PrintVisitor Class: The PrintVisitor class is a concrete implementation of the PageVisitor
+interface designed to generate formatted messages based on the content of different types
+of pages in an application. This class performs specific operations for HomePage, ArtistPage,
+HostPage, and LikedContent page types.
+
+Announcement Class: The Announcement class represents an announcement in the application,
+providing information about a specific event, release, or update. This class is designed
+to encapsulate the details of an announcement, including its name and description.
+
+Event Class: The Event class represents an event in the application, providing information
+about a specific occasion or happening. This class is designed to encapsulate details such
+as the event name, description, date, timestamp, and associated artist name.
+
+Mearch Class: The Merch class represents merchandise in the application, providing information
+about a specific item available for purchase. This class is designed to encapsulate details such
+as the merch name, description, and price.
